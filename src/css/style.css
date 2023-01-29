@@ -1,0 +1,251 @@
+body {
+  background-color: #40ebb2;
+  background-image: url(../../public/background.jpg);
+  background-size: 1810px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #323232;
+}
+
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+nav {
+  display: flex;
+}
+
+.short-menu-list {
+  list-style: none;
+}
+
+.header-logo {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid #40ebb2;
+  box-shadow: 0 0 10px 0 #40ebb2;
+  cursor: context-menu;
+}
+
+.header-logo:hover {
+  transition: all 0.1s ease;
+  scale: 1.1;
+}
+
+a,
+.header-logo,
+.guess,
+.btn,
+.guess-2,
+.guess-3,
+#riddle,
+.p-gues-game-2,
+input,
+.button-game-two {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #40ebb2;
+  transition: all 0.1s ease;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.guess-number, .guess-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 7px;
+  flex-direction: column;
+  width: 800px;
+  /* border: 2px solid #40ebb2;
+  box-shadow: 0 0 10px 0 #40ebb2; */
+}
+
+.guess,
+.guess-2,
+.guess-3,
+#riddle, 
+.p-gues-game-2,
+input,
+.button-game-two {
+  width: 140px;
+  background-color: #e404e4;
+  box-shadow: 0 0 10px 0 #e404e4;
+  border: 2px;
+  padding: 10px;
+  position: relative;
+  left: 0;
+  animation-name: box;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: center;
+  cursor: context-menu;
+  border-radius: 7px;
+}
+
+.guess-2 {
+  width: 200px;
+  animation-name: box-2;
+  animation-duration: 8s;
+  background-color: #eb404e;
+  box-shadow: 0 0 10px 0 #eb404e;
+  margin-bottom: 40px;
+}
+
+.guess-3 {
+  width: 270px;
+  animation-name: box-3;
+  animation-duration: 15;
+  margin-top: 40px;
+}
+
+@keyframes box-3 {
+  0% {
+    left: 350px;
+   
+  }
+  50% {
+    background-color: #29ff42;
+    box-shadow: 0 0 10px 0 #29ff42;
+  }
+  100% {
+    left: -350px;
+    background-color: #eb404e;
+    box-shadow: 0 0 10px 0 #eb404e;
+  }
+}
+
+@keyframes box-2 {
+  0% {
+    left: 390px;
+  }
+  50% {
+    background-color: #40ebb2;
+    box-shadow: 0 0 10px 0 #40ebb2;
+  }
+  100% {
+    left: -390px;
+    background-color: #29ff42;
+    box-shadow: 0 0 10px 0 #29ff42;
+  }
+}
+
+@keyframes box {
+  0% {
+    left: -320px;
+  }
+  50% {
+    background-color: #eb404e;
+    box-shadow: 0 0 10px 0 #eb404e;
+  }
+  100% {
+    left: 320px;
+    background-color: #40ebb2;
+    box-shadow: 0 0 10px 0 #40ebb2;
+  }
+}
+
+.btn {
+  padding: 10px;
+  background-color: #40ebb2;
+  border: 5px solid #40ebb2;
+  opacity: 0.2;
+  width: 40px;
+  color: #40ebb2;
+  font-size: 14px;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+
+.btn:hover{
+  border: 2px solid #40ebb2;
+  scale: 1.7;
+  box-shadow: 0 0 10px 0 #40ebb2;
+  color: #ffffff;
+  transition: all 0.1s ease;
+  font-size: 19px;
+  padding: 7px;
+  opacity: 0.9;
+}
+
+.d-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+
+/* ======================================== */
+
+.guess-text {
+  margin-top: 69px;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.game-two-wrapp{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.button-game-two {
+  background-color: #323232;
+  width: 150px;
+}
+
+#riddle, .p-gues-game-2, input, .button-game-two{
+  animation: none;
+  width: 350px;
+  background-color: #323232;
+  box-shadow: 0 0 10px 0 #323232;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  border-radius: 7px;
+  /* color: #ffffff; */
+}
+
+input:hover {
+  background-color: aliceblue;
+  color: #323232;
+}
+
+.button-game-two {
+  background-color: #40ebb2;
+  box-shadow:  0 0 10px 0 #40ebb2;
+  width:  250px;
+}
+
+.game-two-wrapp{
+  display: flex;
+  gap: 40px;
+}
+
+.button-game-two:hover {
+  scale: 1.1;
+  background-color: #eb404e;
+  box-shadow: 0 0 10px 0 #eb404e;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-line">
+        <div class="header-logo">
+          <div class="p-logo">RS-Gaming </div>
+        </div>
+        <nav>
+          <ul class="short-menu-list">
+            <li>
+              <a href="#">Help</a>
+            </li>
+          </ul>
+          <ul class="short-menu-list">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+          <ul class="short-menu-list">
+            <li>
+              <a href="#">Games</a>
+            </li>
+          </ul>
+          <ul class="short-menu-list">
+            <li>
+              <a href="#">Menu</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section>
+        <div class="guess-number">
+          <p class="guess">Угадай число</p>
+          <p class="guess-2">Загадано число от 1 до 10.</p>
+  
+          <div class="d-wrapp">
+            <div class="f-1">
+              <button class="btn" onclick="guessNum(1)">1</button>
+              <button class="btn" onclick="guessNum(2)">2</button>
+              <button class="btn" onclick="guessNum(3)">3</button>
+              <button class="btn" onclick="guessNum(4)">4</button>
+              <button class="btn" onclick="guessNum(5)">5</button>
+            </div>
+            <div class="f-1">
+              <button class="btn" onclick="guessNum(6)">6</button>
+            <button class="btn" onclick="guessNum(7)">7</button>
+            <button class="btn" onclick="guessNum(8)">8</button>
+            <button class="btn" onclick="guessNum(9)">9</button>
+            <button class="btn" onclick="guessNum(10)">10</button>
+            </div>
+          </div>
+          <p class="guess-3">Дается 5 попыток, чтобы отгадать.</p>
+        </div>
+      </section>
+      <section>
+        <div class="guess-text">
+          <div class="wrap-for-p">
+            <p id="riddle"></p>
+            <p class="p-gues-game-2">Дается 4 попыток, чтобы отгадать.</p>
+            <input placeholder="Ответ" autofocus>
+          </div>
+          <div class="game-two-wrapp">
+            <button class="button-game-two" onclick="check()">Проверить</button>
+            <button class="button-game-two"><a href="#">Начать заново</a></button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="container"></footer>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
